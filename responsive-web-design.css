@@ -1,0 +1,157 @@
+.general {
+    background-color: rgb(73, 151, 73);
+}
+
+.container {
+    background-color: white;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    font-family: Tahoma, sans-serif;
+    font-size: 87%;
+}
+
+.header {
+    color: rgb(73, 151, 73);
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.header p {
+    margin-top: 0;
+}
+
+.content-area {
+    border-top: 2px solid rgb(73, 151, 73);
+    border-bottom: 2px solid rgb(73, 151, 73);
+    
+}
+
+img {
+    width: 810px;
+    height: auto;
+    margin-bottom: 17px;
+}
+
+/* Form Styles  */
+form {
+    background-color: #ececec;
+    padding: 30px 40px;
+}
+/*since a placeholder's already there, label is unnecessary*/
+.hidden-label {
+    position: absolute;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    visibility: hidden;
+
+
+}
+
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 10px;
+    height: 40px;
+    font-family: Tahoma, sans-serif;
+    font-size: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #cdcdcd;
+    outline: none;
+
+}
+/*to give a different color when characters are being entered in certain boxes*/
+input[type="email"]:focus,
+input[type="password"]:focus,
+select {
+    border: 1px solid rgb(224, 233, 224);
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .13);
+}
+
+input[type="submit"] {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    background-color: rgb(88, 177, 88);
+    color: white;
+    padding: 10px 0;
+    border: 1px solid #798A56;
+    border-radius: 3px;
+    font-family: Tahoma, sans-serif;
+    font-size: 100%;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    border: 1px solid #535E38;
+    background-color: #798a56;
+}
+
+.checkbox-text {
+    font-size: 85%;
+}
+
+.main-area {
+    width: 70%;
+    float: left;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    width: 30%;
+    float: left;
+    background-color: rgb(224, 233, 224);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/*the css code for getting smaller screens to adjust to our design*/
+@media screen and (max-width: 700px) {
+    .main-area,
+    .sidebar {
+        width: auto;
+        float: none; 
+    }
+
+    .main-area {
+        padding-right: 0;
+    }
+}
+
+.fix {
+    clear: both;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    list-style: none;
+    float: left;
+    margin-right: 5px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: rgb(73, 151, 73);
+    padding: 10px 20px;
+    border: 3px solid rgb(224, 233, 224);
+    border-bottom: none;
+    display: block;
+}
+
+.nav a:hover {
+    background-color: rgb(224, 233, 224);
+}
